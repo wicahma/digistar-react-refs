@@ -9,12 +9,14 @@ import Profile from "./components/Profile";
 function App() {
   return (
     <>
-      <main className="flex gap-3 md:flex-nowrap flex-wrap m-4">
-        <div className="rounded-lg shadow-lg bg-gray-100 flex grow md:flex-nowrap flex-wrap divide-x divide-dotted divide-gray-500">
-          <PersonalForm />
-          <SocmedForm />
+      <main className="min-h-screen flex">
+        <div className="flex gap-3 md:flex-nowrap grow flex-wrap p-4 min-h-full">
+          <div className="rounded-lg shadow-lg bg-gray-100 flex h-full grow md:flex-nowrap flex-wrap divide-x divide-dotted divide-gray-500">
+            <PersonalForm />
+            <SocmedForm />
+          </div>
+          <Profile />
         </div>
-        <Profile />
       </main>
     </>
   );
